@@ -1,0 +1,51 @@
+body{
+  background-image: url(cinematic-style-mall.jpg);
+  background-repeat: no-repeat;
+  background-color: #f5f5f5;
+  background-size: cover;
+
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600px;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  color: white;
+}
+
+.head{
+  background: rgba( 255, 255, 255, 0.55 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4.5px );
+-webkit-backdrop-filter: blur( 4.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  display: flex;
+  color: black;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.logo{
+  display: flex;
+}
+.navtext{
+  display: flex;
+  align-items: center;
+  font-size: large;
+  gap: 10px;
+  }
+a:link{
+  text-decoration: none;
+}
+.topic{
+  font-size:60px;
+  font: weight 600px;;
+  align-items: center;
+}
+.intro{
+  font-size: 20px;
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+}
