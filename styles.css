@@ -22,7 +22,7 @@ border-radius: 10px;
   display: flex;
   color: black;
   flex-direction: row;
-  justify-content: space-between;
+ justify-content: space-between; 
   align-items: center;
   padding: 10px;
   flex-wrap: wrap;

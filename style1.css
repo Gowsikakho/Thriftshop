@@ -1,0 +1,19 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  background-image: url(loginbg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color:linear-gradient(to right, rgb(219, 234, 254), rgb(147, 197, 253), rgb(59, 130, 246));
+  background-size: 100% 150%;
+  background-attachment: fixed;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600px;
+  font-style: normal;
+  color: skyblue;
+  margin: 0%;
+  position: absolute;
+}

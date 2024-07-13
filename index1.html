@@ -3,25 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="style1.css">
+     <title>Document</title>
+<style>
+  body{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:6% auto;
+  }
+  .container{
+    margin:6% auto;
+    width: 350px;
+    height: 350px;
+    margin:6% auto;
+    backdrop-filter: blur( 4.5px );-webkit-backdrop-filter: blur( 4.5px );
+    background: rgba(156, 201, 218, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(2, 9, 108, 0.222);
+    padding:10px;
+    border-radius: 15px;
+    color: black;
+  }
+  .btn{
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 50px 50px 50px;
+    position: relative;
+    bottom: 0 0 20px 20px;
+    box-shadow: 0 0 20px 9px #60bbc5;   
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .reg{
+    padding:10px 40px;
+    border-radius: 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+  }
+.inputbox{
+  border-radius: 40px;
+  width: 80%;
+  height: 25px;
+  margin-bottom: 10px;
+  padding: 5px;
+  margin-left: 8%;
+  border: none;
+}
+.user{
+  display: flex;
+  gap:10px;
+  margin-bottom: 10px;
+}
+.for{
+  margin-top: 15px;
+}
+</style>
 </head>
 <body>
-   <div class="wrapper">
-      <form action="">
-        <h1>Login</h1>
-        <div class="inputbox">
-            <input type="text" placeholder="Username"
-            required>
-        </div>
-        <div class="inputbox">
-          <input type="password" placeholder="Password"
-          required>
+   <div class="login">
+    <form action="">
+      <div class="container">
+      <div class="btn">
+         <button type="button" class="reg">Login</button>
+         <button type="button" class="reg">Register</button>
       </div>
-      <div class="remeber">
-          <lable><input type="checkbox">Remember me </lable>
-          <a href="#"> Forgot password?</a>
+      <div class="user">
+        <input class = "inputbox" type="email" placeholder="username">
+         </div>
+      <div class="user">
+        <input class = "inputbox" type="password" placeholder="password">
       </div>
-      </form>
-   </div>
+      <label> <input class="for"type="checkbox">Remember password?    </label>
+      <a href="#">Forgot Password</a>
+        </form>
+     </div>
+  </div>
 </body>
 </html>
