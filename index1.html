@@ -17,7 +17,7 @@
   .container{
     margin:6% auto;
     width: 350px;
-    height: 350px;
+    height: 380px;
     margin:6% auto;
     backdrop-filter: blur( 4.5px );-webkit-backdrop-filter: blur( 4.5px );
     background: rgba(156, 201, 218, 0.55);
@@ -26,11 +26,11 @@
     border-radius: 15px;
     color: black;
   }
-  .btn{
-    width: 250px;
+  /* .btn{
+    width: 150px;
     justify-content: center;
     align-items: center;
-    margin: 40px 50px 50px 50px;
+    margin: 40px 50px 50px 80px;
     position: relative;
     bottom: 0 0 20px 20px;
     box-shadow: 0 0 20px 9px #60bbc5;   
@@ -38,14 +38,17 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
+  } */
   .reg{
-    padding:10px 40px;
+    padding:10px 40px 10px 40px;
     border-radius: 20px;
-    border: none;
     background: transparent;
+    border: none;
     cursor: pointer;
     position: relative;
+    margin: 20px 85px 20px 95px;
+    font-size: 25px;
+    font-weight: 700;
   }
 .inputbox{
   border-radius: 40px;
@@ -64,24 +67,37 @@
 .for{
   margin-top: 15px;
 }
+#submit{
+  margin: 30px 85px 20px 110px;
+  padding:10px 30px 10px 30px;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  background-color: rgb(177, 231, 231);
+}
 </style>
 </head>
 <body>
    <div class="login">
     <form action="">
       <div class="container">
-      <div class="btn">
          <button type="button" class="reg">Login</button>
-         <button type="button" class="reg">Register</button>
-      </div>
       <div class="user">
         <input class = "inputbox" type="email" placeholder="username">
          </div>
       <div class="user">
         <input class = "inputbox" type="password" placeholder="password">
       </div>
-      <label> <input class="for"type="checkbox">Remember password?    </label>
+      <label> <input class="for"type="checkbox">Remember password?</label>
       <a href="#">Forgot Password</a>
+      <div>
+      <button id="submit" type="button">Submit</button>
+      </div>
+      <div>
+        <p style="margin-left: 30px;">Don't have an account?<a href="#" target="_self">Register
+        </a></p>
+      </div>
         </form>
      </div>
   </div>
