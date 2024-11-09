@@ -7,35 +7,18 @@
      <title>Document</title>
 <style>
   body{
-    background-image: url(loginbg.png);
-  background-repeat: no-repeat;
-  background-color:linear-gradient(to right, rgb(80, 82, 84), rgb(131, 133, 136), rgb(101, 102, 103));
-  background-position: center;
-  background-size: 100% 150%;
-  background-attachment: fixed;
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600px;
-  font-style: normal;
-  font-variation-settings:"wdth" 100;
-  color: white;
-  margin: 0%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:6% auto;
   }
-  .navtext{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: large;
-  gap: 10px;
-  }
-  .logo{
-  display: flex;
-}
   .container{
     margin:6% auto;
     width: 350px;
-    height: 300px;
-    margin:6% auto;
+    height: 380px;
+    margin:20% auto;
     backdrop-filter: blur( 4.5px );-webkit-backdrop-filter: blur( 4.5px );
     background: rgba(156, 201, 218, 0.55);
     box-shadow: 0 8px 32px 0 rgba(2, 9, 108, 0.222);
@@ -43,8 +26,9 @@
     border-radius: 15px;
     color: black;
   }
+
   .reg{
-    padding:10px 40px 10px 25px;
+    padding:10px 40px 10px 40px;
     border-radius: 20px;
     background: transparent;
     border: none;
@@ -68,6 +52,9 @@
   gap:10px;
   margin-bottom: 10px;
 }
+.for{
+  margin-top: 15px;
+}
 #submit{
   margin: 30px 85px 20px 110px;
   padding:10px 30px 10px 30px;
@@ -77,54 +64,27 @@
   border: none;
   background-color: rgb(177, 231, 231);
 }
-header{
-  background: rgba(213, 209, 209, 0.55);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.222);
-  backdrop-filter: blur( 4.5px );-webkit-backdrop-filter: blur( 4.5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  display: flex;
-  color: black;
-  flex-direction: row;
-  justify-content: space-between; 
-  align-items: center;
-  padding: 10px;
-  flex-wrap: wrap;
-  transition:background: 1s ;
-}
-.logo{
-  display: flex;
-  align-items: center;
-}
- .body{
-    display: flex;
-  }
 </style>
 </head>
 <body>
-  <header class="head">
-    <div class="logo">
-      <img src="logo.png" alt="" width="90" />
-      <h1>Thrift Shopping</h1>
-    </div>
-    <div class="navtext">
-      <a href="index.html">Home</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact Us</a>
-    </div>
-  </header>
    <div class="login">
     <form action="">
       <div class="container">
-         <button type="button" class="reg">Register</button>
+         <button type="button" class="reg">Login</button>
       <div class="user">
         <input class = "inputbox" type="email" placeholder="username">
          </div>
       <div class="user">
         <input class = "inputbox" type="password" placeholder="password">
       </div>
+      <label> <input class="for"type="checkbox">Remember password?</label>
+      <a href="#">Forgot Password</a>
       <div>
       <button id="submit" type="button">Submit</button>
+      </div>
+      <div>
+        <p style="margin-left: 30px;">Don't have an account?<a href="reg.html" target="_self">Register
+        </a></p>
       </div>
         </form>
      </div>
