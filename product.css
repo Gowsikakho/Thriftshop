@@ -1,0 +1,126 @@
+body{
+  background: rgb(240,242,212);
+background: radial-gradient(circle, rgba(240,242,212,1) 0%, rgba(233,233,211,1) 100%);
+  background-repeat: no-repeat;
+  background-color:linear-gradient(to right, rgb(80, 82, 84), rgb(131, 133, 136), rgb(101, 102, 103));
+  background-position: center;
+  background-size: 100% 150%;
+  background-attachment: fixed;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600px;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  margin: 0%;
+}
+
+header{
+  background: rgba(148, 193, 211, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(175, 179, 233, 0.222);
+  backdrop-filter: blur( 4.5px );-webkit-backdrop-filter: blur( 4.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  display: flex;
+  color: black;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.logo{
+  display: flex;
+}
+ .body{
+    display: flex;
+  } 
+ 
+  .login {
+    padding: 10px;
+    font-size: large;
+    font-weight: 300px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    transition: background-color 1s;
+  
+  }
+  
+  .logo {
+    display: flex;
+  }
+  
+  .navtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    gap: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a.login {
+    color: black;
+  }
+  .black{
+    color: black;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .image{
+    margin-left: 200px;
+    display: flex;
+  }
+  .details{
+    margin-top: 100px;
+    margin-left: 50px;
+    color: black;
+  }
+  .sotta{
+    display: flex;
+  }
+  .buttu{
+    padding: 12px 50px 12px 45px;
+    width: 120px;
+    background: rgb(40,163,184);
+    background: radial-gradient(circle, rgba(40,163,184,1) 24%, rgba(41,167,188,1) 50%, rgb(57, 114, 124) 100%);
+    font-size: large;
+    color: aliceblue;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .cheeku{
+    margin-left: 20px;
+    padding: 12px 50px 12px 40px;
+    width: 120px;
+    border:solid rgb(43, 106, 131);
+    border-width: 2px;
+   background-color: aliceblue;
+    font-size: large;
+    color: rgb(48, 129, 147);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .add{
+    margin-left: 20px;
+    padding: 12px 50px 12px 40px;
+    width: 200px;
+    border:solid rgb(97, 57, 8);
+    border-width: 2px;
+   background-color: rgb(228, 207, 20);
+    font-size: large;
+    color: rgb(106, 76, 9);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .deto{
+    margin-left: 205px;
+  }

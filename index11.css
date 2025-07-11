@@ -93,3 +93,6 @@ header{
   font-size: large;
   gap: 10px;
   }
+button{
+  cursor: pointer;
+}
