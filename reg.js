@@ -25,27 +25,27 @@ const provider = new GoogleAuthProvider();
 
 document.getElementById('submit').addEventListener("click", (event) => {
   event.preventDefault();
-  const email = document.getElementById('email').value;
+  const email = document.getElementById('email').value.trim();
   const password = document.getElementById('passwrd').value;
 
   createUserWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
+    .then(() => {
       alert("✅ Account created!");
-      window.location.href = "login.html";
+      window.location.href = "index.html";
     })
     .catch((error) => {
-      alert("❌ " + error.message);
+      alert("❌ Registration failed: " + error.message);
     });
 });
 
 document.getElementById('googleBtn').addEventListener("click", (event) => {
   event.preventDefault();
   signInWithPopup(auth, provider)
-    .then((result) => {
+    .then(() => {
       alert("✅ Signed up with Google!");
       window.location.href = "index.html";
     })
     .catch((error) => {
-      alert("❌ " + error.message);
+      alert("❌ Google signup failed: " + error.message);
     });
 });
