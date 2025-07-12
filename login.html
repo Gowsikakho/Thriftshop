@@ -1,93 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style1.css">
-     <title>Document</title>
-<style>
-  body{
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin:6% auto;
-  }
-  .container{
-    margin:6% auto;
-    width: 350px;
-    height: 380px;
-    margin:20% auto;
-    backdrop-filter: blur( 4.5px );-webkit-backdrop-filter: blur( 4.5px );
-    background: rgba(156, 201, 218, 0.55);
-    box-shadow: 0 8px 32px 0 rgba(2, 9, 108, 0.222);
-    padding:10px;
-    border-radius: 15px;
-    color: black;
-  }
-
-  .reg{
-    padding:10px 40px 10px 40px;
-    border-radius: 20px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    margin: 20px 85px 20px 95px;
-    font-size: 25px;
-    font-weight: 700;
-  }
-.inputbox{
-  border-radius: 40px;
-  width: 80%;
-  height: 25px;
-  margin-bottom: 10px;
-  padding: 5px;
-  margin-left: 8%;
-  border: none;
-}
-.user{
-  display: flex;
-  gap:10px;
-  margin-bottom: 10px;
-}
-.for{
-  margin-top: 15px;
-}
-#submit{
-  margin: 30px 85px 20px 110px;
-  padding:10px 30px 10px 30px;
-  border-radius: 15px;
-  font-weight: 700;
-  font-size: 15px;
-  border: none;
-  background-color: rgb(177, 231, 231);
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <style>
+    body {
+      background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(6px);
+      border-radius: 15px;
+      padding: 30px;
+      width: 350px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+    .container h2 {
+      text-align: center;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #00bcd4;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0097a7;
+    }
+    #googleBtn {
+      background-color: #db4437;
+    }
+    #googleBtn:hover {
+      background-color: #c23321;
+    }
+    .link {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+  <script type="module" src="login.js" defer></script>
 </head>
 <body>
-   <div class="login">
-    <form action="">
-      <div class="container">
-         <button type="button" class="reg">Login</button>
-      <div class="user">
-        <input class = "inputbox" type="email" placeholder="username">
-         </div>
-      <div class="user">
-        <input class = "inputbox" type="password" placeholder="password">
-      </div>
-      <label> <input class="for"type="checkbox">Remember password?</label>
-      <a href="#">Forgot Password</a>
-      <div>
-      <button id="submit" type="button">Submit</button>
-      </div>
-      <div>
-        <p style="margin-left: 30px;">Don't have an account?<a href="reg.html" target="_self">Register
-        </a></p>
-      </div>
-        </form>
-     </div>
+  <div class="container">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Enter Email" required />
+    <input type="password" id="password" placeholder="Enter Password" required />
+    <button id="submit">Login</button>
+    <button id="googleBtn">Sign in with Google</button>
+    <div class="link">
+      Don't have an account? <a href="reg.html">Register</a>
+    </div>
   </div>
 </body>
 </html>

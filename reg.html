@@ -1,135 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style1.css">
-     <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <style>
+    body {
+      background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(6px);
+      border-radius: 15px;
+      padding: 30px;
+      width: 350px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+    .container h2 {
+      text-align: center;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #00bcd4;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0097a7;
+    }
+    #googleBtn {
+      background-color: #db4437;
+    }
+    #googleBtn:hover {
+      background-color: #c23321;
+    }
+    .link {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
   <script type="module" src="reg.js" defer></script>
-<style>
-  body{
-    background-image: url(loginbg.png);
-  background-repeat: no-repeat;
-  background-color:linear-gradient(to right, rgb(80, 82, 84), rgb(131, 133, 136), rgb(101, 102, 103));
-  background-position: center;
-  background-size: 100% 150%;
-  background-attachment: fixed;
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600px;
-  font-style: normal;
-  font-variation-settings:"wdth" 100;
-  color: white;
-  margin: 0%;
-  }
-  .navtext{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: large;
-  gap: 10px;
-  }
-  .logo{
-  display: flex;
-}
-  .container{
-    margin:6% auto;
-    width: 350px;
-    height: 300px;
-    margin:6% auto;
-    backdrop-filter: blur( 4.5px );-webkit-backdrop-filter: blur( 4.5px );
-    background: rgba(156, 201, 218, 0.55);
-    box-shadow: 0 8px 32px 0 rgba(2, 9, 108, 0.222);
-    padding:10px;
-    border-radius: 15px;
-    color: black;
-  }
-  .reg{
-    padding:10px 40px 10px 25px;
-    border-radius: 20px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    margin: 20px 85px 20px 95px;
-    font-size: 25px;
-    font-weight: 700;
-  }
-.inputbox{
-  border-radius: 40px;
-  width: 80%;
-  height: 25px;
-  margin-bottom: 10px;
-  padding: 5px;
-  margin-left: 8%;
-  border: none;
-}
-.user{
-  display: flex;
-  gap:10px;
-  margin-bottom: 10px;
-}
-#submit{
-  margin: 30px 85px 20px 110px;
-  padding:10px 30px 10px 30px;
-  border-radius: 15px;
-  font-weight: 700;
-  font-size: 15px;
-  border: none;
-  background-color: rgb(177, 231, 231);
-  cursor: pointer;
-}
-header{
-  background: rgba(213, 209, 209, 0.55);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.222);
-  backdrop-filter: blur( 4.5px );-webkit-backdrop-filter: blur( 4.5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  display: flex;
-  color: black;
-  flex-direction: row;
-  justify-content: space-between; 
-  align-items: center;
-  padding: 10px;
-  flex-wrap: wrap;
-  transition:background 1s ;
-}
-.logo{
-  display: flex;
-  align-items: center;
-}
- .body{
-    display: flex;
-  }
-</style>
 </head>
 <body>
-  <header class="head">
-    <div class="logo">
-      <img src="logo.png" alt="" width="90" />
-      <h1>Thrift Shopping</h1>
+  <div class="container">
+    <h2>Register</h2>
+    <input type="email" id="email" placeholder="Enter Email" required />
+    <input type="password" id="passwrd" placeholder="Enter Password" required />
+    <button id="submit">Register</button>
+    <button id="googleBtn">Sign up with Google</button>
+    <div class="link">
+      Already have an account? <a href="login.html">Login</a>
     </div>
-    <div class="navtext">
-      <a href="index.html">Home</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact Us</a>
-    </div>
-  </header>
-   <div class="login">
-    <form action="index.html">
-      <div class="container">
-         <button type="button" class="reg">Register</button>
-      <div class="user">
-        <input class = "inputbox" type="email" placeholder="username" id="email">
-         </div>
-      <div class="user">
-        <input class = "inputbox" type="password" placeholder="password" id="passwrd">
-      </div>
-      <div>
-      <button onclick="sub()" id="submit" type="button">Submit</button>
-      </div>
-        </form>
-     </div>
   </div>
 </body>
 </html>
